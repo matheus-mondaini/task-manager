@@ -4,11 +4,11 @@
   "private": true,
   "homepage": "https://matheus-mondaini.github.io/task-manager/",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
