@@ -7,7 +7,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "predeploy": "npm run build",
+    "predeploy": "next build && cp .nojekyll out/",
     "deploy": "gh-pages -d out",
     "lint": "next lint"
   },
@@ -21,8 +21,10 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "autoprefixer": "^10.4.20",
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
-    "tailwindcss": "^4"
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
   }
 }
